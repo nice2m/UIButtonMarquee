@@ -40,6 +40,7 @@
     //_marqueeiew.frame = ;
     [self.view addSubview:_marqueeiew];
     //MARK: Test Push
+    //MARK: Test multi git user
 }
 
 - (void)didReceiveMemoryWarning
