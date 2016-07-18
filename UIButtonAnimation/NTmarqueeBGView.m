@@ -65,7 +65,7 @@
     
     self.marqueePlayGround = [UIView new];
     //self.marqueePlayGround.backgroundColor = [UIColor lightGrayColor];
-    self.marqueePlayGround.backgroundColor = UIColorFromRGB(0x5EE5A8);
+    self.marqueePlayGround.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.marqueePlayGround];
     
     [self.marqueePlayGround mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -76,7 +76,7 @@
     }];
     
     self.firstView = [UIView new];
-    self.firstView.backgroundColor = UIColorFromRGB(0x373055);
+    self.firstView.backgroundColor = [UIColor lightGrayColor];
     [self.marqueePlayGround addSubview:self.firstView];
     
     [self.firstView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -88,7 +88,7 @@
     }];
     
     self.secondView = [UIView new];
-    self.secondView.backgroundColor = UIColorFromRGB(0x373055);
+    self.secondView.backgroundColor = [UIColor lightGrayColor];
     [self.marqueePlayGround addSubview:self.secondView];
     [self.secondView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.equalTo(self.firstView);
@@ -136,13 +136,13 @@ static CGFloat stepWidth = 1.f;
     _rgbB = arc4random() % 255;
     _rgbG = arc4random() % 255;
     _rgbR = arc4random() % 255;
-    self.firstView.backgroundColor = RGBCOLOR(_rgbR, _rgbG, _rgbB);
+    //self.firstView.backgroundColor = RGBCOLOR(_rgbR, _rgbG, _rgbB);
     
     _rgbR = 255 - _rgbR;
     _rgbG = 255 - _rgbG;
     _rgbB = 255 - _rgbB;
     
-    self.secondView.backgroundColor = RGBCOLOR(_rgbR, _rgbG, _rgbB);
+    //self.secondView.backgroundColor = RGBCOLOR(_rgbR, _rgbG, _rgbB);
     
     CGRect rect1 = self.firstView.frame;
     rect1.origin.x -= stepWidth;

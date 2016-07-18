@@ -26,21 +26,20 @@
     [super viewDidLoad];
     self.marqueeOn = YES;
     // Do any additional setup after loading the view, typically from a nib.
-    _marqueeiew = [NTmarqueeBGView marqueeView:CGRectMake(0, 200, self.view.frame.size.width, 49) title:@"OnProcessing" itemWidth:16.f itemHeight:4.f btnHandler:^(UIButton *sender) {
+    _marqueeiew = [NTmarqueeBGView marqueeView:CGRectMake(0, 200, self.view.frame.size.width, 49) title:@"进行中" itemWidth:16.f itemHeight:4.f btnHandler:^(UIButton *sender) {
         if (self.marqueeOn) {
             [_marqueeiew stopAnimateView];
-            _marqueeiew.title = @"Aborted";
+            _marqueeiew.title = @"结束";
             _marqueeOn = NO;
         }else{
             [_marqueeiew animateView];
-            _marqueeiew.title = @"OnProcessing";
+            _marqueeiew.title = @"进行中";
             _marqueeOn = YES;
         }
     }];
     //_marqueeiew.frame = ;
     [self.view addSubview:_marqueeiew];
-    //MARK: Test Push
-    //MARK: Test multi git user
+    
 }
 
 - (void)didReceiveMemoryWarning
