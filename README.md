@@ -1,6 +1,3 @@
 # UIButton-Marquee
-<<<<<<< HEAD
-marquee UIButton~
-=======
-simple marquee UIButton
->>>>>>> ea2797790f41cd7cf37b02807e06d91ab0f66234
+
+跑马灯,自定义,视图,按钮
