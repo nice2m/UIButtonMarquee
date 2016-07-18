@@ -39,6 +39,7 @@
     }];
     //_marqueeiew.frame = ;
     [self.view addSubview:_marqueeiew];
+    //MARK: Test Push
 }
 
 - (void)didReceiveMemoryWarning
